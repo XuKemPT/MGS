@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<models>
+			<themeoptions>
+				<class>BookStore_ThemeOptions_Model</class>
+			</themeoptions>
+		</models>
+		<helpers>
+			<themeoptions>
+				<class>BookStore_ThemeOptions_Helper</class>
+			</themeoptions>
+		</helpers>
+	</global>
+	<adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+							<config>
+								<children>
+									<bookstore>
+										<title>Bookstore - All</title>
+									</bookstore>
+								</children>
+							</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<!-- color picker -->
+		<layout>
+			<updates>
+				<themeoptions>
+					<file>bookstore_themeoptions.xml</file>
+				</themeoptions>
+			</updates>
+		</layout>
+		<!-- color picker -->
+	</adminhtml>
+	<!-- set default configurations -->
+	<default>
+		<themeoptions>
+			<header>
+				<menu_bg>CCCCCC</menu_bg>
+			</header>
+		</themeoptions>
+	</default>
+</config>

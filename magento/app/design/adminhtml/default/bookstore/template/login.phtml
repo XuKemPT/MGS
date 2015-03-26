@@ -1,0 +1,80 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo Mage::helper('adminhtml')->__('Log into BookStore Admin Page') ?></title>
+    <!--[if IE]>
+    <script src=
+    "http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="<?php echo $this->getSkinUrl('../../default/bookstore/custom.css') ?>" media="all" />
+    <!--[if IE]> <link rel="stylesheet" href="<?php echo $this->getSkinUrl('iestyles.css') ?>" type="text/css" media="all" /> <![endif]-->
+    <!--[if lt IE 7]> <link rel="stylesheet" href="<?php echo $this->getSkinUrl('below_ie7.css') ?>" type="text/css" media="all" /> <![endif]-->
+    <!--[if IE 7]> <link rel="stylesheet" href="<?php echo $this->getSkinUrl('ie7.css') ?>" type="text/css" media="all" /> <![endif]-->
+</head>
+<body id="login_page">
+    <div class="login_container">
+        <div class="login_logo">
+            <img src="<?php echo $this->getSkinUrl('../../default/bookstore/images/logo.png') ?>" alt="<?php echo Mage::helper('adminhtml')->__('Log into Magento Admin Page') ?>">
+        </div>
+            <!-- /.login_logo -->
+            <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+        <div class="login_form">
+            
+            <form method="post" action="" id="loginForm">
+                <div class="form-title">
+                    <h1>
+                        <?php echo Mage::helper('adminhtml')->__('Welcome to the login panel') ?>
+                    </h1>
+                    <h2>
+                        <?php echo Mage::helper('adminhtml')->__('Log into Magento Admin Page') ?>
+                    </h2>
+                </div>
+                <!-- /.form-title -->
+                <div class="input-container">
+                    <input type="text" class="form-control" id="login-username" name="login[username]" placeholder="<?php echo Mage::helper('adminhtml')->__('User Name:') ?>" required>
+                
+                     <input type="password" class="form-control" id="login-password" name="login[password]" placeholder=" <?php echo Mage::helper('adminhtml')->__('Password:') ?>" required>
+                </div>
+                <!-- /.input-container -->
+                <button type="submit" id="login-btn" class="btn-login"><?php echo Mage::helper('adminhtml')->__('Login') ?>
+                &raquo;
+                </button>
+            </form>
+            <a href="<?php echo Mage::helper('adminhtml')->getUrl('adminhtml/index/forgotpassword',array('_nosecret' => true)) ?>"><?php echo Mage::helper('adminhtml')->__('Forgot your password?') ?></a>
+        </div>
+        <!-- /.login_form -->
+        <a href="<?php echo $this->getBaseUrl() ?>"class="link-frontend"><?php echo Mage::helper('adminhtml')->__('&laquo; Back to the store') ?></a>
+        <script type="text/javascript">
+        var loginForm = new varienForm('loginForm');
+        </script>
+</body>
+</html>
+
