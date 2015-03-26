@@ -1,0 +1,16 @@
+<div class="block-leftnav">
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle cate-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		    <?php echo $this->__('All Categories')?>
+		    <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			<?php foreach ($this->getStoreCategories() as $_category): ?>
+			<?php if($_category->name!=""): ?>
+			<?php echo $this->drawItem($_category) ?>
+			<?php endif?>
+			<?php endforeach ?>
+		</ul>
+	</div>
+</div>
+	

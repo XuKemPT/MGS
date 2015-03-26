@@ -1,0 +1,316 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+   
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <header>
+        <?php echo $this->getChildHtml('header') ?>
+    </header>
+    <section id="after-header">
+        <?php echo $this->getChildHtml("slider") ?>
+    </section>
+    <div class="clearfix"></div>
+
+    <br />
+    <section id="maincontent">
+        
+        <div class="col-main">
+          <div id="productss">
+            <div class="col-md-12">
+              <div class="row">
+                <?php echo $this->getChildHtml('global_messages') ?>
+                <?php echo $this->getChildHtml('content') ?>
+              </div>
+            </div>
+          </div>    
+        </div>
+    </section>
+    <div id="productss">
+      <div class="col-md-12">
+        <div class="container">
+          <div class="row">
+            <div role="tabpanel" class="tab-prod">
+              <div class="col-md-3"><h3>Featured product</h3></div>
+              <!-- Nav tabs -->
+              <ul class="col-md-9 list-inline" role="tablist">
+                <li role="presentation" class="active"><a href="#Clothing1" aria-controls="home" role="tab" data-toggle="tab">Clothing1</a></li>
+                <li role="presentation"><a href="#Clothing2" aria-controls="profile" role="tab" data-toggle="tab">Clothing2</a></li>
+                <li role="presentation"><a href="#Clothing3" aria-controls="messages" role="tab" data-toggle="tab">Clothing3</a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+             <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="Clothing1">
+                <div class="slider1">
+                  <div class="img-pro">
+                      <a href="#">
+                        <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                        <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                      </a>
+                      <h4><a href="#">FUSCE ALIquam</a></h4>
+                      <div class="price">$170.00</div>
+                      <div class="sticker">NEW</div>
+                      <div class="actions">
+                        <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                        <ul class="add-to-links pull-left">
+                            <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                            <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                      <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                      <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#">
+                      <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                      <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="Clothing2">
+                <div class="slider2">
+                  <div class="img-pro">
+                      <a href="#">
+                        <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                        <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                      </a>
+                      <h4><a href="#">FUSCE ALIquam</a></h4>
+                      <div class="price">$170.00</div>
+                      <div class="sticker">NEW</div>
+                      <div class="actions">
+                        <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                        <ul class="add-to-links pull-left">
+                            <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                            <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                      <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                      <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#">
+                      <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                      <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-pro">
+                    <a href="#"><!-- <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" onmouseover="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg'" onmouseout="this.src='http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg'" alt="T-shirt" /> -->
+                    <img class="img-front" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/06.jpg" alt="" />
+                    <img class="img-back" src="http://localhost/magento/magento/skin/frontend/dicove/default/images/product/21.jpg" alt="" />
+                    </a>
+                    <h4><a href="#">FUSCE ALIquam</a></h4>
+                    <div class="price">$170.00</div>
+                    <div class="sticker">NEW</div>
+                    <div class="actions">
+                      <button type="button" class="button btn-cart pull-left" data-toggle="tooltip" data-placement="top"  title="Add to Cart"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></button>
+                      <ul class="add-to-links pull-left">
+                          <li><a href="http://www.plazathemes.com/demo/ma_dicove/index.php/wishlist/index/add/product/1/form_key/gg2aGsDb0jZwUMJa/" class="link-wishlist fa fa-heart" data-toggle="tooltip" data-placement="top"  title="Add to Wishlist"><span>Add to Wishlist</span></a></li>
+                          <li><span class="separator">|</span> <a href="http://www.plazathemes.com/demo/ma_dicove/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9kaWNvdmUvaW5kZXgucGhwLz9fX19zdG9yZT1lbg,,/form_key/gg2aGsDb0jZwUMJa/" class="link-compare fa fa-refresh" data-original-title="Add to Compare" rel="tooltip"data-toggle="tooltip" data-placement="top"  title="Add to Compare"><span>Add to Compare</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="Clothing3">aa..</div>
+            </div>
+          </div>
+          <div class="row QC">
+            <div class="col-md-6">
+              <a href="#">
+                <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/media/magentotheme/banner/banner_home01.jpg" alt="banner QC" />
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="#">
+                <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/media/magentotheme/banner/banner_home02.jpg" alt="banner QC" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <a href="#">
+                  <img src="http://localhost/magento/magento/skin/frontend/dicove/default/images/media/magentotheme/banner/banner_home03.jpg" alt="banner QC" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <footer id="footer">
+            <?php echo $this->getChildHtml('footer') ?>
+    
+    </footer>
+    <?php echo $this->getChildHtml('before_body_end') ?>
+    <?php echo $this->getAbsoluteFooter() ?>
+
+</body>
+</html>
